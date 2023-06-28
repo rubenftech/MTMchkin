@@ -7,7 +7,8 @@
 
 void BattleCard::print(std::ostream &os) const {
     printCardDetails(os,m_cardName);
-    printMonsterDetails(os,BattleCard::force ,BattleCard::damage ,BattleCard::coins , true );
+    bool isDragon = (m_cardName == "Dragon");
+    printMonsterDetails(os,BattleCard::force ,BattleCard::damage ,BattleCard::coins , isDragon );
     printEndOfCardDetails(os);
 }
 
