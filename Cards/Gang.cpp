@@ -38,7 +38,7 @@ void Gang::applyEncounter(Player &player, bool gang_checker) const{
             if(m_gang[i]->getName()=="Witch"){
                 printLossBattle(player.getPlayerName(),"Witch");
                 player.damage(vampire_damage);
-                player.vampire_decrease_force();
+                player.witch_decrease_force();
             }else if(m_gang[i]->getName()=="Gremlin"){
                 printLossBattle(player.getPlayerName(),"Gremlin");
                 player.damage(goblin_damage);

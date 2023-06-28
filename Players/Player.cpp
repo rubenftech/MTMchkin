@@ -102,7 +102,7 @@ std::ostream &operator<<(std::ostream &os, const Player & p1) {
     return os;
 }
 
-void Player::vampire_decrease_force(){
+void Player::witch_decrease_force(){
     if (m_force>0){
         m_force--;
     }

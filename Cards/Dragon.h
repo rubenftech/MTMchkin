@@ -13,7 +13,6 @@
 class Dragon: public BattleCard{
 public:
 
-    void applyEncounter(Player &player, bool gang_checker) const override;
 
     Dragon();
     Dragon(const Dragon&) = default;

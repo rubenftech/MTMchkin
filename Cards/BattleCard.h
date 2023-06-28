@@ -11,14 +11,16 @@ public:
     BattleCard() = default;
     BattleCard(const std::string& name, int force, int coins, int damage);
     BattleCard(const BattleCard&) = default;
-    BattleCard& operator=(const BattleCard& other) = delete;
+    BattleCard& operator = (const BattleCard& other) = default;
+
     void print(std::ostream &os) const override;
+    void applyEncounter(Player &player, bool gang_checker) const override;
     virtual ~BattleCard() = default ;
 
 protected:
-     const int force=0;
-     const int coins=0;
-     const int damage=0;
+     const int force;
+     const int coins;
+     const int damage;
 };
 
 

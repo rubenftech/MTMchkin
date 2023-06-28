@@ -112,7 +112,7 @@ public:
     int getPlayerHP()const;
     void setPlayerHPToZero();
     int get_player_number_i() const;
-    void vampire_decrease_force();
+    void witch_decrease_force();
 
     /*
      * C'tor to the "default player" -

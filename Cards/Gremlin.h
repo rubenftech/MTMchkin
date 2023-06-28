@@ -4,24 +4,19 @@
 
 #ifndef UNTITLED_GREMELIN_H
 #define UNTITLED_GREMELIN_H
-#include "Card.h"
+#include "BattleCard.h"
+#define GREMLINFORCE 5
+#define GREMLINCOINS 2
+#define GREMLINDAMAGE 10
 
-
-class Gremlin: public Card{
+class Gremlin: public BattleCard{
 public:
 
-    void print(std::ostream& out) const override;
-    void applyEncounter(Player &player, bool gang_checker) const override;
 
     Gremlin();
     Gremlin(const Gremlin&) = default;
     Gremlin& operator=(const Gremlin& other) = default;
     ~Gremlin() override = default;
-
-private:
-    static const int force=5;
-    static const int coins=2;
-    static const int damage=10;
 
 };
 
