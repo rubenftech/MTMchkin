@@ -24,12 +24,12 @@ void BattleCard::applyEncounter(Player &player, bool gang_checker) const{
     }
     else{
         printLossBattle(player.getPlayerName(),m_cardName);
-        if (player.getPlayerName() == "Dragon"){
+        if (this->m_cardName == "Dragon"){
             player.setPlayerHPToZero();
             return;
         }
         player.damage(damage);
-        if (player.getPlayerName() == "Witch"){
+        if (this->m_cardName == "Witch"){
             player.witch_decrease_force();
         }
     }
