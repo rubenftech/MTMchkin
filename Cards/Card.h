@@ -37,7 +37,7 @@ public:
      * @return
      *      void
     */
-    virtual void applyEncounter(Player& player,bool gang_checker) const=0;
+    virtual void applyEncounter(Player& player,bool gang_checker) const = 0;
 
 
     /*

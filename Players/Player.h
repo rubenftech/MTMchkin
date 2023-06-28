@@ -34,7 +34,7 @@ public:
      * @return
      *      void
     */
-    virtual void printInfo(std::ostream& os) const;
+    virtual void printInfo(std::ostream& os) const = 0 ;
 
 /*
      * up the player's level by one if possible :

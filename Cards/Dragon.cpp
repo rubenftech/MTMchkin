@@ -4,7 +4,9 @@
 
 #include "Dragon.h"
 
-Dragon::Dragon():Card("Dragon"){}
+
+Dragon::Dragon():BattleCard("Dragon",DRAGONFORCE, DRAGONCOINS,DRAGONDAMAGE ){}
+
 
 void Dragon::applyEncounter(Player &player, bool gang_checker) const{
     if (player.getAttackStrength() >= force){
@@ -18,10 +20,4 @@ void Dragon::applyEncounter(Player &player, bool gang_checker) const{
         player.setPlayerHPToZero();
         printLossBattle(player.getPlayerName(),"Dragon");
     }
-}
-
-void Dragon::print(std::ostream &os) const {
-    printCardDetails(os,m_cardName);
-    printMonsterDetails(os,Dragon::force ,Dragon::damage ,Dragon::coins , true );
-    printEndOfCardDetails(os);
 }
