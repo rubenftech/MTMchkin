@@ -10,5 +10,5 @@ void BattleCard::print(std::ostream &os) const {
     printEndOfCardDetails(os);
 }
 
-BattleCard::BattleCard(const std::string &name, int force,int coins, int damage):
+BattleCard::BattleCard(const std::string &name, const int force,const int coins, const int damage):
 Card(name), force(force), coins(coins), damage(damage) {}

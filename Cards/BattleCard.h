@@ -8,7 +8,7 @@
 
 class BattleCard: public Card {
 public:
-    BattleCard() = delete;
+    BattleCard() = default;
     BattleCard(const std::string& name, int force, int coins, int damage);
     BattleCard(const BattleCard&) = default;
     BattleCard& operator=(const BattleCard& other) = delete;
@@ -16,9 +16,9 @@ public:
     virtual ~BattleCard() = default ;
 
 protected:
-     const int force;
-     const int coins;
-     const int damage;
+     const int force=0;
+     const int coins=0;
+     const int damage=0;
 };
 
 

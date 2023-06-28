@@ -4,7 +4,6 @@
 
 #ifndef UNTITLED_DRAGON_H
 #define UNTITLED_DRAGON_H
-#include "Card.h"
 #include "BattleCard.h"
 #define DRAGONFORCE 25
 #define DRAGONCOINS 1000
